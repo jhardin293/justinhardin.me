@@ -2,10 +2,19 @@
 
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
+var mainBowerFiles = require('main-bower-files');
+var $  = require('gulp-load-plugins')();
 
-// Load plugins
-var $ = require('gulp-load-plugins')();
-
+gulp.task('js', function(){
+  var jsFiles = ['src/scripts/*'];
+ 
+  return gulp.src(mainBowerFiles().concat(jsFiles)) 
+    .pipe($.filter('*.js'))
+    .pipe($.concat('main.js'))
+    .pipe(gulp.dest('build/scripts'))
+    .on('error', $.util.log)
+    .pipe(browserSync.reload({stream: true}));
+});
 
 gulp.task('styles', function() {
   var browsers = [
@@ -67,6 +76,7 @@ gulp.task('watch', ['build'], function() {
   gulp.watch('src/**/*.less', ['styles']);
   gulp.watch('src/images/**/*', ['images']);
   gulp.watch('src/**/*.jade', ['views']);
+  gulp.watch('src/scripts/*.js', ['js']);
 
   gulp.start('browser-sync');
 });
@@ -86,7 +96,7 @@ gulp.task('clean', function(cb) {
 });
 
 
-gulp.task('build', ['styles', 'views', 'images']);
+gulp.task('build', ['js','styles', 'views', 'images']);
 
 
 gulp.task('default', ['clean'], function() {
