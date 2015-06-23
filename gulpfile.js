@@ -33,6 +33,8 @@ gulp.task('styles', function() {
           browsers: browsers
         })
       ]))
+    .pipe($.rename({suffix: '.min'}))
+    .pipe($.minifyCss())
     .pipe(gulp.dest('build'))
     .pipe(browserSync.reload({stream: true}));
 });
