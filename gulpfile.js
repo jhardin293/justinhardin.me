@@ -12,6 +12,9 @@ gulp.task('js', function(){
     .pipe($.filter('*.js'))
     .pipe($.concat('main.js'))
     .pipe(gulp.dest('build/scripts'))
+    .pipe($.rename({suffix: '.min'}))
+    .pipe($.uglify())
+    .pipe(gulp.dest('build/scripts'))
     .on('error', $.util.log)
     .pipe(browserSync.reload({stream: true}));
 });
@@ -33,6 +36,7 @@ gulp.task('styles', function() {
           browsers: browsers
         })
       ]))
+    .pipe(gulp.dest('build'))
     .pipe($.rename({suffix: '.min'}))
     .pipe($.minifyCss())
     .pipe(gulp.dest('build'))
