@@ -1,7 +1,106 @@
-
 @import (inline) "normalize.css/normalize.css";
 @import (inline) "bootstrap/dist/css/bootstrap.css";
 
-body {
-  background-color: azure;
+a, a:focus, a:hover {
+  text-decoration: none;
+}
+
+.toggle-nav{
+  display:none;
+}
+
+.nav-wrapper {
+  float: right
+}
+
+.header-logo-wrap {
+  float: left;
+
+  h1 {
+    color: white;
+    margin: 0;
+    line-height: 70px;
+    font-size: 200%;
+  }
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  background: #303030;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 2%;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0,0.15);
+
+  ul{
+    display:inline-block;
+  }
+
+  li{
+    margin: 0px 50px 0px 0px;
+    float: left;
+    list-style: none;
+    font-size: 17px;
+  }
+  li:last-child{
+    margin-right: 0;
+  }
+
+  a{
+    text-shadow: 0px 1px 0px rgba(0,0,0,0,0.5);
+    color: #777;
+    transition: color linear 0.15s;
+  }
+
+  a:hover, .menu .current-item a {
+    text-decoration: none;
+    color: #66a992;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    ul {
+      display: none;
+      transition: max-height 1s;
+      height: 0px;
+    }
+
+    ul.active {
+      transition: max-height 1s;
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 10px 18px;
+      box-shadow: 0px 1px 1px rgba(0,0,0,0,0.15);
+      background: #242323;
+    }
+
+    li {
+      margin: 5px 0px 5px 0px;
+      float: none;
+      display: block;
+    }
+
+    a {
+      display: block;
+    }
+  }
+
+  .toggle-nav {
+    float:left;
+    display:inline-block;
+    color:#777;
+    font-size:20px;
+    transition:color linear 0.15s;
+  }
+
+  .toggle-nav:hover, .toggle-nav {
+    text-decoration:none;
+    color:#66a992;
+  }
 }

@@ -1,12 +1,14 @@
 extends layout
 
 block content
-  h1 Hi!
-  main
-    div
-      h2 SVG image
-      img(src="/images/github.svg", width="128")
-    hr
-    div
-      h2 PNG image
-      img(src="/images/github.png", width="128")
+  .header
+    nav.menu
+      .header-logo-wrap: h1 Justin Hardin
+      .nav-wrapper
+        ul
+          li.current-item: a(href="#") Home
+          li: a(href="#") My Work
+          li: a(href="#") About Me
+          li: a(href="#") Get in Touch
+          li: a(href="#") Blog
+        a.toggle-nav(href="#")&#9776; 
