@@ -5,16 +5,20 @@ a, a:focus, a:hover {
   text-decoration: none;
 }
 
+@nav-padding: 0 2%;
+
 .toggle-nav{
   display:none;
 }
 
 .nav-wrapper {
-  float: right
+  float: right;
+  padding:@nav-padding;
 }
 
 .header-logo-wrap {
   float: left;
+  padding: @nav-padding;
 
   h1 {
     color: white;
@@ -30,7 +34,6 @@ a, a:focus, a:hover {
   background: #303030;
   height: 70px;
   line-height: 70px;
-  padding: 0 2%;
   box-shadow: 0px 1px 1px rgba(0,0,0,0,0.15);
 
   ul{
@@ -62,22 +65,23 @@ a, a:focus, a:hover {
 
 @media screen and (max-width: 768px) {
   .menu {
-    ul {
-      display: none;
-      transition: max-height 1s;
+    .nav-wrapper {
+      background-color: #242323;
       height: 0px;
+      width: 100%;
+    }
+    ul.active {
+      display: block;
     }
 
-    ul.active {
-      transition: max-height 1s;
-      display: block;
+    ul {
       width: 100%;
+      display: none;
       position: absolute;
       top: 100%;
       left: 0;
       padding: 10px 18px;
       box-shadow: 0px 1px 1px rgba(0,0,0,0,0.15);
-      background: #242323;
     }
 
     li {
@@ -97,6 +101,9 @@ a, a:focus, a:hover {
     color:#777;
     font-size:20px;
     transition:color linear 0.15s;
+    position: absolute;
+    right: 0;
+    padding: @nav-padding;
   }
 
   .toggle-nav:hover, .toggle-nav {
