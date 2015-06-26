@@ -5,12 +5,25 @@ var browserSync = require('browser-sync');
 var mainBowerFiles = require('main-bower-files');
 var $  = require('gulp-load-plugins')();
 
-gulp.task('js', function(){
-  var jsFiles = ['src/scripts/*'];
+//js dependencies
+gulp.task('jsDep', function(){
   var trianglify = ['bower_components/trianglify/dist/*']; //This is a hack, mainBowerFiles should return this
-  return gulp.src(mainBowerFiles().concat(trianglify, jsFiles)) 
+  return gulp.src(mainBowerFiles().concat(trianglify)) 
     .pipe($.filter('*.js'))
-    .pipe($.concat('main.js'))
+    .pipe($.concat('dep.js'))
+    .pipe(gulp.dest('build/scripts'))
+    .pipe($.rename({suffix: '.min'}))
+    .pipe($.uglify())
+    .pipe(gulp.dest('build/scripts'))
+    .on('error', $.util.log)
+    .pipe(browserSync.reload({stream: true}));
+});
+
+//App js
+gulp.task('jsApp', function(){
+  var jsFiles = ['src/scripts/*'];
+  return gulp.src(jsFiles)
+    .pipe($.concat('app.js'))
     .pipe(gulp.dest('build/scripts'))
     .pipe($.rename({suffix: '.min'}))
     .pipe($.uglify())
@@ -82,7 +95,7 @@ gulp.task('watch', ['build'], function() {
   gulp.watch('src/**/*.less', ['styles']);
   gulp.watch('src/images/**/*', ['images']);
   gulp.watch('src/**/*.jade', ['views']);
-  gulp.watch('src/scripts/*.js', ['js']);
+  gulp.watch('src/scripts/*.js', ['jsApp']);
 
   gulp.start('browser-sync');
 });
@@ -102,7 +115,7 @@ gulp.task('clean', function(cb) {
 });
 
 
-gulp.task('build', ['js','styles', 'views', 'images']);
+gulp.task('build', ['jsDep','jsApp','styles', 'views', 'images']);
 
 
 gulp.task('default', ['clean'], function() {
