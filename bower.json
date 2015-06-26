@@ -4,6 +4,7 @@
   "dependencies": {
     "normalize.css": "~3.0.2",
     "jquery": "~2.1.4",
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "trianglify": "~0.2.1"
   }
 }

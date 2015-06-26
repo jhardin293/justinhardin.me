@@ -7,8 +7,8 @@ var $  = require('gulp-load-plugins')();
 
 gulp.task('js', function(){
   var jsFiles = ['src/scripts/*'];
- 
-  return gulp.src(mainBowerFiles().concat(jsFiles)) 
+  var trianglify = ['bower_components/trianglify/dist/*']; //This is a hack, mainBowerFiles should return this
+  return gulp.src(mainBowerFiles().concat(trianglify, jsFiles)) 
     .pipe($.filter('*.js'))
     .pipe($.concat('main.js'))
     .pipe(gulp.dest('build/scripts'))
