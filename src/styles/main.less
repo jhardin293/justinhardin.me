@@ -1,6 +1,9 @@
 @import (inline) "normalize.css/normalize.css";
 @import (inline) "bootstrap/dist/css/bootstrap.css";
 
+html, body{
+  height: 100%;
+}
 a, a:focus, a:hover {
   text-decoration: none;
 }
@@ -29,6 +32,7 @@ a, a:focus, a:hover {
 }
 
 .menu {
+  z-index: 1;
   position: fixed;
   width: 100%;
   background: #303030;
@@ -63,51 +67,64 @@ a, a:focus, a:hover {
 
 }
 
-@media screen and (max-width: 768px) {
-  .menu {
-    .nav-wrapper {
-      background-color: #242323;
-      height: 0px;
-      width: 100%;
-    }
-    ul.active {
-      display: block;
-    }
-
-    ul {
-      width: 100%;
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      padding: 10px 18px;
-      box-shadow: 0px 1px 1px rgba(0,0,0,0,0.15);
-    }
-
-    li {
-      margin: 5px 0px 5px 0px;
-      float: none;
-      display: block;
-    }
-
-    a {
-      display: block;
-    }
-  }
-
-  .toggle-nav {
-    float:left;
-    display:inline-block;
-    color:#777;
-    font-size:20px;
-    transition:color linear 0.15s;
-    position: absolute;
-    right: 0;
-    padding: @nav-padding;
-  }
-
-  .toggle-nav:hover, .toggle-nav {
-    text-decoration:none;
-    color:#66a992;
-  }
+.poly {
+   position: absolute;
+   opacity: 0.94;
+   min-width: 100%;
+   min-height: 100%;
 }
+
+.hero{
+  background: url(../images/justin-banner.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+  @media screen and (max-width: 768px) {
+    .menu {
+      .nav-wrapper {
+        background-color: #242323;
+        height: 0px;
+        width: 100%;
+      }
+      ul.active {
+        display: block;
+      }
+
+      ul {
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 10px 18px;
+        box-shadow: 0px 1px 1px rgba(0,0,0,0,0.15);
+      }
+
+      li {
+        margin: 5px 0px 5px 0px;
+        float: none;
+        display: block;
+      }
+
+      a {
+        display: block;
+      }
+    }
+
+    .toggle-nav {
+      float:left;
+      display:inline-block;
+      color:#777;
+      font-size:20px;
+      transition:color linear 0.15s;
+      position: absolute;
+      right: 0;
+      padding: @nav-padding;
+    }
+
+    .toggle-nav:hover, .toggle-nav {
+      text-decoration:none;
+      color:#66a992;
+    }
+  }
