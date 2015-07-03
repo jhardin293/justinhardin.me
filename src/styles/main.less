@@ -67,20 +67,30 @@ a, a:focus, a:hover {
 
 }
 
-.poly {
-   position: absolute;
-   opacity: 0.94;
-   min-width: 100%;
-   min-height: 100%;
-}
 
-.hero{
-  background: url(../images/justin-banner.jpg) no-repeat center center fixed;
-  background-size: cover;
+.hero-wrapper{
   height: 100%;
+  .poly {
+     position: absolute;
+     min-width: 100%;
+     min-height: 100%;
+     top: 0;
+  }
+
+  .hero-img{
+    background: url(../images/hero-fy.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+  }
+
+  .title-wrapper {
+    top: 0;
+    padding-top: 225px;
+    text-align: center;
+  }
 }
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .menu {
       .nav-wrapper {
         background-color: #242323;
