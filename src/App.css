@@ -1,24 +1,56 @@
-.App {
-  text-align: center;
-}
+@font-face {
+  font-family: 'Circular Std Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Black"), url("fonts/CircularStd-Black.woff") format("woff"); }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+@font-face {
+  font-family: 'Circular Std Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Book"), url("fonts/CircularStd-Book.woff") format("woff"); }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+@font-face {
+  font-family: 'Circular Std Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Medium"), url("fonts/CircularStd-Medium.woff") format("woff"); }
 
-.App-intro {
-  font-size: large;
-}
+@font-face {
+  font-family: 'Circular Std Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Black Italic"), url("fonts/CircularStd-BlackItalic.woff") format("woff"); }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+@font-face {
+  font-family: 'Circular Std Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Bold"), url("fonts/CircularStd-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Circular Std Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Bold Italic"), url("fonts/CircularStd-BoldItalic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Circular Std Book Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Book Italic"), url("fonts/CircularStd-BookItalic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Circular Std Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular Std Medium Italic"), url("fonts/CircularStd-MediumItalic.woff") format("woff"); }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: 'Circular Std Black';
+  font-weight: normal;
+  color: #968870; }
