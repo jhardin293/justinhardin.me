@@ -1,5 +1,5 @@
 @import 'fonts/fonts.scss';
-$gold: #968870;
+@import './variables.scss';
 
 html, body {
   width: 100%;
@@ -10,4 +10,9 @@ body {
   font-family: 'Circular Std Black';
   font-weight: normal;
   color: $gold;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
 }
