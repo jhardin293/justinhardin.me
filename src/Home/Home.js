@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './Home.css';
 
+import vac from '../images/vac.gif';
+import trinet from '../images/trinet-thumb.gif';
+
 class Home extends Component {
   render() {
     return (
@@ -21,8 +24,49 @@ class Home extends Component {
           </div>
         </header>
         <div className="title container">
-          <h1>San Fransisco Front end Developer looking for new opportunities</h1>
+          <h1>San Fransisco Front end Developer &#10; looking for new opportunities</h1>
+          <div className="btn-wrapper">
+            <button className="btn">About me</button>
+          </div>
         </div>
+        <div className="projects container">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="project-thumb">
+                <img src={vac} alt=""/>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="project-thumb"></div>
+            </div>
+            <div className="col-md-4">
+              <div className="project-thumb"></div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-4">
+              <div className="project-thumb"></div>
+            </div>
+            <div className="col-md-8">
+              <div className="project-thumb">
+                <img src={trinet} alt=""/>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-4">
+              <div className="project-thumb"></div>
+            </div>
+            <div className="col-md-8">
+              <div className="project-thumb"></div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div className="container">
+            <div className="footer-inner"></div>
+          </div>
+        </footer>
       </div>
     )
   }

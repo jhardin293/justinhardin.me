@@ -10,11 +10,13 @@
     a {
       text-decoration: none;
       color: $gold;
+      letter-spacing: 1px;
     }
     h2 {
       margin: 0;
       &:last-child {
-        margin-top: -8px;
+        margin-top: -10px;
+        font-size: 30px;
       }
     }
   }
@@ -50,8 +52,51 @@
 }
 
 .title {
+  margin-bottom: 151px;
   h1 {
     font-size: 48px;
-    width: 70%;
+    margin-bottom: 20px;
+    width: 84%;
+  }
+}
+
+.btn-wrapper {
+  .btn {
+    border: none;
+    background-color: white;
+    border: 2px solid $gold;
+    padding: 8px 52px 8px 52px;
+    border-radius: 300px;
+    color: $gold;
+    text-transform: uppercase;
+    font-family: 'Circular Std Black';
+    font-weight: normal;
+    text-align: center;
+    font-size: 15px;
+    line-height: 27px;
+    vertical-align: baseline;
+  }
+}
+
+.projects {
+  margin-bottom: 151px;
+  .row {
+    margin-bottom: 16px;
+  }
+  .project-thumb {
+     height: 155px;
+     background-color: $black-grey;
+     overflow: hidden;
+     img {
+       width: 100%;
+       opacity: 0.8;
+     }
+  }
+}
+
+footer {
+  background-color: $black-grey;
+  .footer-inner {
+    padding: 54.1667px 0px;
   }
 }
