@@ -14,10 +14,9 @@
     }
     h2 {
       margin: 0;
-      &:last-child {
-        margin-top: -10px;
-        font-size: 30px;
-      }
+      margin-top: -10px;
+      font-size: 33px;
+      letter-spacing: -0.8px;
     }
   }
   .hamburger {
@@ -85,11 +84,44 @@
   }
   .project-thumb {
      height: 155px;
+     position: relative;
      background-color: $black-grey;
      overflow: hidden;
-     img {
-       width: 100%;
-       opacity: 0.8;
+     .thumb-inner{
+       position: relative;
+       height: 100%;
+       .thumb-hover {
+         opacity: 0;
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         transition: all .3s ease;
+         background-color: rgba(30, 32, 35, 0.85);
+         border: 3px solid $gold;
+         z-index: 1;
+         h3 {
+           font-size: 21px;
+           position: absolute;
+           width: 100%;
+           margin: 0;
+           text-align: left;
+           top: 50%;
+           color: $gold;
+           padding: 32px;
+           transform: translateY(-50%);
+         }
+       }
+       img {
+         width: 100%;
+         opacity: 0.8;
+         height: auto;
+       }
+     }
+     &:hover {
+       cursor: pointer;
+       .thumb-hover {
+         opacity: 1;
+       }
      }
   }
 }
