@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
 import './Footer.css';
 
 class Footer extends Component {
@@ -14,8 +13,8 @@ class Footer extends Component {
               </div>
               <div className="block-links">
                 <div className="block-col">
-                  <p><a href="">jhardin295@gmail.com</a></p>
-                  <p><a href="">925-864-6437</a></p>
+                  <p><a href="mailto:jhardin295@gmail.com">jhardin295@gmail.com</a></p>
+                  <p><a href="tel:9258646437">925-864-6437</a></p>
                 </div>
               </div>
             </div>
@@ -25,12 +24,12 @@ class Footer extends Component {
               </div>
               <div className="block-links">
                 <div className="block-col">
-                  <p><a href="">github</a></p>
-                  <p><a href="">linkedin</a></p>
+                  <p><a href="https://github.com/jhardin293">github</a></p>
+                  <p><a href="https://www.linkedin.com/in/justin-hardin-7ba86232">linkedin</a></p>
                 </div>
                 <div className="block-col">
-                  <p><a href="">twitter</a></p>
-                  <p><a href="">instagram</a></p>
+                  <p><a href="https://twitter.com/jhardin925">twitter</a></p>
+                  <p><a href="https://www.instagram.com/justin.svg/">instagram</a></p>
                 </div>
               </div>
             </div>

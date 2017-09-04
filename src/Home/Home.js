@@ -54,66 +54,66 @@ class Home extends Component {
             </div>
             <div className="col-md-4">
               <div className="project-thumb">
-                <a href="">
+                <Link to="/project/designmap">
                   <div className="thumb-inner">
                     <div className="thumb-hover">
                        <h3>Designmap</h3>
                     </div>
                     <img src={designmap} alt=""/>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-md-4">
               <div className="project-thumb">
-                <a href="">
+                <Link to="/project/bankrate">
                   <div className="thumb-inner">
                     <div className="thumb-hover">
                        <h3>Bankrate</h3>
                     </div>
                     <img src={bankrate} alt=""/>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-8">
               <div className="project-thumb">
-                <a href="">
+                <Link to="/project/trinet">
                   <div className="thumb-inner">
                     <div className="thumb-hover">
                        <h3>TriNet</h3>
                     </div>
                     <img src={trinet} alt=""/>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-md-4">
               <div className="project-thumb">
-                <a href="">
+                <Link to="/project/justinhardin.me">
                   <div className="thumb-inner">
                     <div className="thumb-hover">
                        <h3>Justinhardin.me</h3>
                     </div>
                     <img src={justin} alt=""/>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-8">
               <div className="project-thumb">
-                <a href="">
+                <Link to="/project/swiper">
                   <div className="thumb-inner">
                     <div className="thumb-hover">
                        <h3>Swiper</h3>
                     </div>
                     <img src={swiper} alt=""/>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
