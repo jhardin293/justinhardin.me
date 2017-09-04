@@ -30,7 +30,7 @@ class Home extends Component {
           <div className="row">
             <div className="col-md-4">
               <div className="project-thumb">
-                <Link to="/project">
+                <Link to="/project/140proof">
                   <div className="thumb-inner">
                     <div className="thumb-hover">
                        <h3>140 Proof</h3>
@@ -42,14 +42,14 @@ class Home extends Component {
             </div>
             <div className="col-md-4">
               <div className="project-thumb">
-                <a href="">
+                <Link to="/project/butchershop">
                   <div className="thumb-inner">
                     <div className="thumb-hover">
                        <h3>Butchershop</h3>
                     </div>
                     <img src={creatimator} alt=""/>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-4">
