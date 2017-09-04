@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+header {
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    margin-bottom: 130px;
+    .logo {
+      a {
+        text-decoration: none;
+        color: $gold;
+        letter-spacing: 1px;
+      }
+      h2 {
+        margin: 0;
+        margin-top: -10px;
+        font-size: 24px;
+        letter-spacing: -0.8px;
+      }
+    }
+    .hamburger {
+      width: 24px;
+      height: 14px;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+      cursor: pointer;
+      span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: $gold;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+        &:nth-child(1) {
+          top: 0px;
+        }
+        &:nth-child(2) {
+          top: 5px;
+        }
+        &:nth-child(3) {
+          top: 11px;
+        }
+
+
+      }
+    }
+  }
+}

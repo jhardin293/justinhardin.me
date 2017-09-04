@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './Home.css';
+
+import Header from '../Header/Header.js';
+import Footer from '../Footer/Footer.js';
 
 import vac from '../images/vac.gif';
 import trinet from '../images/trinet-thumb.gif';
@@ -13,38 +17,27 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <header>
-          <div className="nav-wrapper container">
-            <div className="logo">
-              <a href="">
-                <h2>Justin Hardin</h2>
-              </a>
-            </div>
-            <div className="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </header>
+        <Header />
         <div className="title container">
           <h1>San Fransisco Front end Developer &#10; looking for new opportunities</h1>
           <div className="btn-wrapper">
-            <button className="btn">About me</button>
+              <Link to="/about">
+                <button className="btn">About me</button>
+              </Link>
           </div>
         </div>
         <div className="projects container">
           <div className="row">
             <div className="col-md-4">
               <div className="project-thumb">
-                <a href="">
+                <Link to="/project">
                   <div className="thumb-inner">
                     <div className="thumb-hover">
                        <h3>140 Proof</h3>
                     </div>
                     <img src={vac} alt=""/>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-4">
@@ -125,11 +118,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <footer>
-          <div className="container">
-            <div className="footer-inner"></div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     )
   }

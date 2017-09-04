@@ -1,0 +1,35 @@
+@import './variables.scss';
+
+footer {
+  background-color: $black-grey;
+  font-family: 'Circular Std Book';
+  .footer-inner {
+    padding: 54.1667px 0px;
+    display: flex;
+  }
+
+  .footer-block {
+    display: flex;
+    align-items: baseline;
+    margin-right: 80px;
+    .block-title {
+      color: white;
+      margin-right: 20px;
+      h4 {
+        font-size: 15px;
+      }
+    }
+
+    a {
+      color: $gold;
+      font-size: 15px;
+    }
+
+    .block-links {
+      display: flex;
+      .block-col {
+        margin-right: 15px;
+      }
+    }
+  }
+}

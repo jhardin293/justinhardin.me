@@ -61,6 +61,9 @@ body {
 a {
   text-decoration: none; }
 
+button:hover {
+  cursor: pointer; }
+
 .container {
   width: 940px;
   margin: 0 auto; }
