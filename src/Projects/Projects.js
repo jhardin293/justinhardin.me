@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import Header from '../Header/Header.js';
-import Footer from '../Footer/Footer.js';
 import './Projects.css';
 
 import Proof from './Proof.js';
@@ -27,12 +25,10 @@ class Project extends Component {
     const selectedProject = projects[route];
     return (
       <div>
-        <Header />
         <div>
           <h1>Project</h1>
           {selectedProject}
         </div>
-        <Footer />
       </div>
     )
   }

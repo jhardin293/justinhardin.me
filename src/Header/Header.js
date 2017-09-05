@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
+
   render() {
     return (
       <header>
@@ -12,7 +13,10 @@ class Header extends Component {
               <h2>Justin Hardin</h2>
             </Link>
           </div>
-          <div className="hamburger">
+          <div
+            className={`hamburger ${this.props.menuOpen ? 'isOpen': ''}`}
+            onClick={() => this.props.menuToggle()}
+          >
             <span></span>
             <span></span>
             <span></span>

@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import './Home.css';
 
-import Header from '../Header/Header.js';
-import Footer from '../Footer/Footer.js';
-
 import vac from '../images/vac.gif';
 import trinet from '../images/trinet-thumb.gif';
 import designmap from '../images/designmap-thumb.gif';
@@ -17,7 +14,6 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Header />
         <div className="title container">
           <h1>San Fransisco Front end Developer &#10; looking for new opportunities</h1>
           <div className="btn-wrapper">
@@ -118,7 +114,6 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     )
   }
