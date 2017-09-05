@@ -81,4 +81,16 @@ header {
       }
     }
   }
+
+  @media (max-width: 767px) {
+    .nav-wrapper {
+      margin-bottom: 40px;
+      padding-top: 35px;
+      .logo {
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }

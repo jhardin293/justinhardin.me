@@ -24,7 +24,7 @@ class Home extends Component {
         </div>
         <div className="projects container">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-sm-4">
               <div className="project-thumb">
                 <Link to="/project/140proof">
                   <div className="thumb-inner">
@@ -36,7 +36,7 @@ class Home extends Component {
                 </Link>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-sm-4">
               <div className="project-thumb">
                 <Link to="/project/butchershop">
                   <div className="thumb-inner">
@@ -48,7 +48,7 @@ class Home extends Component {
                 </Link>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-sm-4">
               <div className="project-thumb">
                 <Link to="/project/designmap">
                   <div className="thumb-inner">
@@ -62,7 +62,7 @@ class Home extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-sm-4">
               <div className="project-thumb">
                 <Link to="/project/bankrate">
                   <div className="thumb-inner">
@@ -74,7 +74,7 @@ class Home extends Component {
                 </Link>
               </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-sm-8">
               <div className="project-thumb">
                 <Link to="/project/trinet">
                   <div className="thumb-inner">
@@ -88,7 +88,7 @@ class Home extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-sm-4">
               <div className="project-thumb">
                 <Link to="/project/justinhardin.me">
                   <div className="thumb-inner">
@@ -100,7 +100,7 @@ class Home extends Component {
                 </Link>
               </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-sm-8">
               <div className="project-thumb">
                 <Link to="/project/swiper">
                   <div className="thumb-inner">

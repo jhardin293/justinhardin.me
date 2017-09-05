@@ -32,4 +32,13 @@ footer {
       }
     }
   }
+
+  @media (max-width: 767px) {
+    .footer-block, .block-links, .footer-inner {
+      display: block;
+    }
+    .block-title h4 {
+      margin-bottom: -8px;
+    }
+  }
 }
