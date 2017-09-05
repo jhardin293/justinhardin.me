@@ -43,7 +43,7 @@ class Home extends Component {
                     <div className="thumb-hover">
                        <h3>Butchershop</h3>
                     </div>
-                    <img src={creatimator} alt=""/>
+                    <img width="1246" height="631" src={creatimator} alt=""/>
                   </div>
                 </Link>
               </div>

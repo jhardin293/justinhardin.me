@@ -1,15 +1,18 @@
 @import './variables.scss';
 
-.content-row {
-  margin-top: 40px;
-  h2 {
-    margin: 0px;
-    font-size: 52px;
-  }
-  p {
-    font-family: 'Circular Std Book';
-    color: #525354;
-    font-size: 20px;
-    line-height: 1.5;
+.project-page {
+  margin-bottom: 40px;
+  .content-row {
+    margin-top: 40px;
+    h2 {
+      margin: 0px;
+      font-size: 52px;
+    }
+    p {
+      font-family: 'Circular Std Book';
+      color: #525354;
+      font-size: 20px;
+      line-height: 1.5;
+    }
   }
 }
