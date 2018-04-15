@@ -15,7 +15,7 @@ class Home extends Component {
     return (
       <div>
         <div className="title container">
-          <h1>San Fransisco Front end Developer &#10; looking for new opportunities</h1>
+          <h1>Remote Front-end developer traveling the world &#10; while building a full stack React.js tutorial</h1>
           <div className="btn-wrapper">
               <Link to="/about">
                 <button className="btn">About me</button>
