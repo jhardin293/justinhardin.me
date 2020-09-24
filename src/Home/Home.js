@@ -15,9 +15,9 @@ class Home extends Component {
     return (
       <div>
         <div className="title container">
-          <h1 style={{fontSize: 34}}>Front-end Web + Augmented reality  Developer </h1>
+          <h1 style={{fontSize: 34}}>Software Engineer</h1>
            <h1>
-            Currently building an AR customer experience app for Restaurants!
+            Currently building <a href="https://climatebase.org/">Climatebase</a> 
             </h1>
           <div className="btn-wrapper">
               <Link to="/about">
